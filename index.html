@@ -121,7 +121,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <header>
   <div class="topbar">
-    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+  <div class="menu-btn" onclick="document.querySelector('.sidebar').classList.toggle('active')">
+  ☰
+</div>
     <h1>The Book Worm Library</h1>
   </div>
 </header>
