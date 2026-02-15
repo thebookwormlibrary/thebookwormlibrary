@@ -93,14 +93,18 @@ footer{background:#050505;padding:22px 16px;text-align:center;border-top:1px sol
 }
 </style>
 </head>
-  <script>
-const sidebar = document.querySelector(".sidebar");
-const links = document.querySelectorAll(".sidebar a");
+ <script>
+document.addEventListener("DOMContentLoaded", function () {
 
-links.forEach(link => {
-  link.addEventListener("click", () => {
-    sidebar.style.left = "-260px";
+  const sidebar = document.querySelector(".sidebar");
+  const links = document.querySelectorAll(".sidebar a");
+
+  links.forEach(link => {
+    link.addEventListener("click", () => {
+      sidebar.classList.remove("active");
+    });
   });
+
 });
 </script>
 <body>
