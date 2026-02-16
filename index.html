@@ -270,16 +270,11 @@ function toggleMenu(){
 document.getElementById('admissionForm').addEventListener('submit',function(e){
   e.preventDefault();
 
-  const name=document.getElementById('name').value;
-  const phone=document.getElementById('phone').value;
-  const plan=document.getElementById('plan').value;
-
-  const msg =
-    "New Admission%0A"+
-    "Name: "+name+"%0A"+
-    "Phone: "+phone+"%0A"+
-    "City: "+City;
-   "Plan: "+plan;
+ const name=document.getElementById('name').value; 
+ const phone=document.getElementById('phone').value;
+ const city=document.getElementById('city').value; 
+ const plan=document.getElementById('plan').value; 
+ const msg=New Admission%0AName: ${name}%0APhone: ${phone}%0ACity: ${city}%0APlan: ${plan};
   
   window.open("https://wa.me/919785084798?text="+msg,'_blank');
 });
