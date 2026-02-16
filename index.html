@@ -224,6 +224,7 @@ footer{
     <form id="admissionForm">
       <input type="text" id="name" placeholder="Student Name" required>
       <input type="tel" id="phone" placeholder="Mobile Number" required>
+      <input type="text" id="name" placeholder="Seat No." required>
 <select id="city" required> 
   <option value="">Select City</option>
   <option>Sri Ganganagar</option>
@@ -238,7 +239,7 @@ footer{
         <option>3 Months – ₹2700</option>
         <option>1 Year – ₹10000</option>
       </select>
-      <input type="text" id="name" placeholder="Seat No." required>
+     
       </select>
       <select id="Shift" required>
          <option value="">Select Shift</option>
@@ -259,7 +260,11 @@ footer{
 
 <footer>
   <p>© 2026 The Book Worm Library</p>
-<div class="social"> <a href="https://wa.me/919785084798" target="_blank">WhatsApp</a> <a href="https://www.instagram.com/bookwormlibrary2025?igsh=MWRpYWY1Z2J2ejZlMg%3D%3D&utm_source=qr" target="_blank">Instagram</a> </div> </footer>
+<div class="social"> 
+  <a href="https://wa.me/919785084798" target="_blank">WhatsApp</a> 
+  <a href="https://www.instagram.com/bookwormlibrary2025?igsh=MWRpYWY1Z2J2ejZlMg%3D%3D&utm_source=qr" target="_blank">Instagram</a>
+</div>
+</footer>
 
 <script>
 function toggleMenu(){
@@ -276,9 +281,7 @@ document.getElementById('admissionForm').addEventListener('submit',function(e){
  const plan=document.getElementById('plan').value; 
  const msg=New Admission%0AName: ${name}%0APhone: ${phone}%0ACity: ${city}%0APlan: ${plan};
   
-  window.open("https://wa.me/919785084798?text="+msg,'_blank');
-});
-</script>
-
-</body>
-</html>
+ window.open(https://wa.me/919785084798?text=${msg},'_blank'); });
+  </script>
+  </body>
+ </html>
