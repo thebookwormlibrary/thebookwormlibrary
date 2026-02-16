@@ -245,7 +245,8 @@ footer{
          <option>Morning Shift</option>
          <option>Evening Shift</option>
          <option>Full Day</option>
-      <button class="btn" type="submit">Submit Admission</button>
+     </select> <button class="btn" type="submit">Submit Admission</button> </form> </div> </section>
+
     </form>
   </div>
 </section>
@@ -258,14 +259,14 @@ footer{
 
 <footer>
   <p>© 2026 The Book Worm Library</p>
-</footer>
+<div class="social"> <a href="https://wa.me/919785084798" target="_blank">WhatsApp</a> <a href="https://www.instagram.com/bookwormlibrary2025?igsh=MWRpYWY1Z2J2ejZlMg%3D%3D&utm_source=qr" target="_blank">Instagram</a> </div> </footer>
 
 <script>
 function toggleMenu(){
   document.getElementById('sidebar').classList.toggle('active');
 }
 
-// WhatsApp send (FIXED)
+// WhatsApp Admission send (FIXED)
 document.getElementById('admissionForm').addEventListener('submit',function(e){
   e.preventDefault();
 
@@ -278,7 +279,7 @@ document.getElementById('admissionForm').addEventListener('submit',function(e){
     "Name: "+name+"%0A"+
     "Phone: "+phone+"%0A"+
     "Plan: "+plan;
-
+   
   window.open("https://wa.me/919785084798?text="+msg,'_blank');
 });
 </script>
