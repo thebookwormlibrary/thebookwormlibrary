@@ -272,16 +272,27 @@ function toggleMenu(){
 }
 
 // WhatsApp Admission send (FIXED)
-document.getElementById('admissionForm').addEventListener('submit',function(e){
+document.getElementById("admissionForm").addEventListener("submit", function(e){
   e.preventDefault();
 
- const name=document.getElementById('name').value; 
- const phone=document.getElementById('phone').value;
- const city=document.getElementById('city').value; 
- const plan=document.getElementById('plan').value; 
- const msg=New Admission%0AName: ${name}%0APhone: ${phone}%0ACity: ${city}%0APlan: ${plan};
-  
- window.open(https://wa.me/919785084798?text=${msg},'_blank'); });
-  </script>
+  const name = document.getElementById("name").value;
+  const phone = document.getElementById("phone").value;
+  const city = document.getElementById("city").value;
+  const plan = document.getElementById("plan").value;
+
+  // WhatsApp message
+  const message =
+`New Admission
+Name: ${name}
+Phone: ${phone}
+City: ${city}
+Plan: ${plan}`;
+
+  const encodedMessage = encodeURIComponent(message);
+
+  // WhatsApp open
+  window.open(`https://wa.me/919785084798?text=${encodedMessage}`, "_blank");
+});
+</script>
   </body>
  </html>
