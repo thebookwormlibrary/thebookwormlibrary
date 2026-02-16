@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <title>Best Library in Sri Ganganagar | The Book Worm Library</title>
-<meta name="google-site-verification" content="nHSArnRuy2HL1fvkefJsaQsn47DlbCVQJ3OUKJV5iXM" />
+
 <meta name="description" content="The Book Worm Library - Premium silent study library in Sri Ganganagar. Book fixed seat online." />
 <meta name="keywords" content="library in Sri Ganganagar, study library near me" />
 
@@ -13,44 +13,133 @@
 *{box-sizing:border-box}
 body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#000;color:#fff}
 
-header{background:#000;padding:16px;border-bottom:1px solid #222;position:sticky;top:0;z-index:999}
+header{
+  background:#000;
+  padding:16px;
+  border-bottom:1px solid #222;
+  position:sticky;
+  top:0;
+  z-index:999
+}
+
 .topbar{display:flex;align-items:center;gap:12px}
 .menu-btn{font-size:26px;cursor:pointer;color:#ffd400}
 h1{margin:0;color:#ffd400;font-size:20px}
 
-.sidebar{position:fixed;left:-260px;top:0;width:260px;height:100%;background:#0b0b0b;padding:20px;transition:.35s ease;z-index:1000;border-right:1px solid #222}
+/* Sidebar */
+.sidebar{
+  position:fixed;
+  left:-260px;
+  top:0;
+  width:260px;
+  height:100%;
+  background:#0b0b0b;
+  padding:20px;
+  transition:.35s ease;
+  z-index:1000;
+  border-right:1px solid #222
+}
 .sidebar.active{left:0}
-.sidebar a{display:block;padding:12px 10px;margin-bottom:8px;color:#fff;text-decoration:none;border-radius:8px;border:1px solid #222;font-size:14px}
+.sidebar a{
+  display:block;
+  padding:12px 10px;
+  margin-bottom:8px;
+  color:#fff;
+  text-decoration:none;
+  border-radius:8px;
+  border:1px solid #222;
+  font-size:14px
+}
+.sidebar a:hover{background:#ffd400;color:#000;font-weight:700}
 
 section{padding:26px 16px;max-width:1100px;margin:auto}
 
+/* ===== HERO SLIDER ===== */
 .hero{
   position:relative;
   border-radius:16px;
   overflow:hidden;
   border:1px solid #222;
-  background:url('images/library1.jpg') center/cover no-repeat;
+  height:260px;
+}
+
+.hero-slide{
+  position:absolute;
+  inset:0;
+  background-size:cover;
+  background-position:center;
+  opacity:0;
+  animation:heroSlider 18s infinite;
+}
+
+.hero-slide:nth-child(1){animation-delay:0s}
+.hero-slide:nth-child(2){animation-delay:6s}
+.hero-slide:nth-child(3){animation-delay:12s}
+
+@keyframes heroSlider{
+  0%{opacity:0}
+  8%{opacity:1}
+  30%{opacity:1}
+  38%{opacity:0}
+  100%{opacity:0}
 }
 
 .hero-overlay{
-  padding:60px 18px;
+  position:relative;
+  padding:70px 18px;
   text-align:center;
   background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.85));
 }
 
 .hero-overlay h2{color:#ffd400;margin-top:0;font-size:28px}
 
-.btn{display:inline-block;background:#ffd400;color:#000;padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:700;margin-top:12px;border:none;cursor:pointer}
+.btn{
+  display:inline-block;
+  background:#ffd400;
+  color:#000;
+  padding:12px 18px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:700;
+  margin-top:12px;
+  border:none;
+  cursor:pointer
+}
 
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
 .card{background:#0f0f0f;border:1px solid #222;border-radius:14px;padding:18px}
 .price{color:#ffd400;font-size:22px;font-weight:700}
 .badge{background:#ff3b3b;color:#fff;padding:4px 10px;border-radius:20px;font-size:11px;margin-left:6px}
 
-input,select{width:100%;padding:12px;margin:6px 0 14px;border-radius:8px;border:1px solid #333;background:#000;color:#fff}
+input,select{
+  width:100%;
+  padding:12px;
+  margin:6px 0 14px;
+  border-radius:8px;
+  border:1px solid #333;
+  background:#000;
+  color:#fff
+}
 
-footer{background:#050505;padding:22px 16px;text-align:center;border-top:1px solid #222;font-size:14px}
-.social a{display:inline-block;margin:6px;padding:10px 14px;border-radius:8px;background:#ffd400;color:#000;text-decoration:none;font-weight:700;font-size:14px}
+footer{
+  background:#050505;
+  padding:22px 16px;
+  text-align:center;
+  border-top:1px solid #222;
+  font-size:14px
+}
+
+.social a{
+  display:inline-block;
+  margin:6px;
+  padding:10px 14px;
+  border-radius:8px;
+  background:#ffd400;
+  color:#000;
+  text-decoration:none;
+  font-weight:700;
+  font-size:14px
+}
 
 @media(max-width:600px){
   .hero-overlay h2{font-size:22px}
@@ -67,7 +156,7 @@ footer{background:#050505;padding:22px 16px;text-align:center;border-top:1px sol
   <a href="#packages">📦 Packages</a>
   <a href="#admission">📝 Admission Form</a>
   <a href="#photos">📸 Photos</a>
-  <a href="https://www.google.com/maps/search/?api=1&query=The+Book+Worm+Library+Ridhi+Sidhi+II+Near+Pari+Chowk+Sri+Ganganagar" target="_blank">📍 Location</a>
+  <a href="https://www.google.com/maps/search/?api=1&query=The+Book+Worm+Library+Sri+Ganganagar" target="_blank">📍 Location</a>
   <a href="tel:9785084798">📞 Call</a>
 </div>
 
@@ -80,6 +169,10 @@ footer{background:#050505;padding:22px 16px;text-align:center;border-top:1px sol
 
 <!-- HERO -->
 <section class="hero">
+  <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=1400&auto=format&fit=crop')"></div>
+  <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?q=80&w=1400&auto=format&fit=crop')"></div>
+  <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1495446815901-a7297e633e8d?q=80&w=1400&auto=format&fit=crop')"></div>
+
   <div class="hero-overlay">
     <h2>Career Focused Silent Library</h2>
     <p>Premium Study Space in Sri Ganganagar • Multiple Locations Coming Soon</p>
@@ -96,10 +189,9 @@ footer{background:#050505;padding:22px 16px;text-align:center;border-top:1px sol
       <input type="text" id="name" placeholder="Student Name" required>
       <input type="tel" id="phone" placeholder="Mobile Number" required>
 
-      <!-- ✅ NEW: Seat Number -->
-      <input type="text" id="seat" placeholder="Seat Number (Type Manually)" required>
+      <!-- NEW -->
+      <input type="text" id="seat" placeholder="Seat Number" required>
 
-      <!-- ✅ NEW: Shift -->
       <select id="shift" required>
         <option value="">Select Shift</option>
         <option>Morning</option>
@@ -128,14 +220,17 @@ footer{background:#050505;padding:22px 16px;text-align:center;border-top:1px sol
 
 <footer>
   <p>© 2026 The Book Worm Library</p>
-  <div class="social">
-    <a href="https://wa.me/919785084798" target="_blank">WhatsApp</a>
-    <a href="https://www.instagram.com/bookwormlibrary2025?igsh=MWRpYWY1Z2J2ejZlMg%3D%3D&utm_source=qr" target="_blank">Instagram</a>
-  </div>
 </footer>
 
 <script>
-// WhatsApp Admission Send (FIXED)
+// Sidebar auto close
+document.querySelectorAll(".sidebar a").forEach(link=>{
+  link.addEventListener("click",()=>{
+    document.getElementById("sidebar").classList.remove("active");
+  });
+});
+
+// WhatsApp send (FIXED)
 document.getElementById('admissionForm').addEventListener('submit',function(e){
   e.preventDefault();
 
@@ -146,9 +241,17 @@ document.getElementById('admissionForm').addEventListener('submit',function(e){
   const city=document.getElementById('city').value;
   const plan=document.getElementById('plan').value;
 
-  const msg=`New Admission%0AName: ${name}%0APhone: ${phone}%0ASeat: ${seat}%0AShift: ${shift}%0ACity: ${city}%0APlan: ${plan}`;
+  const text =
+`New Admission
+Name: ${name}
+Phone: ${phone}
+Seat: ${seat}
+Shift: ${shift}
+City: ${city}
+Plan: ${plan}`;
 
-  window.open(`https://wa.me/919785084798?text=${msg}`,'_blank');
+  const url = "https://wa.me/919785084798?text=" + encodeURIComponent(text);
+  window.open(url,'_blank');
 });
 </script>
 
