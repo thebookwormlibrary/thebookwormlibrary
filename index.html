@@ -6,22 +6,15 @@
 
 <title>Best Library in Sri Ganganagar | The Book Worm Library</title>
 
-<meta name="description" content="The Book Worm Library - Premium silent study library in Sri Ganganagar. Book fixed seat online." />
-<meta name="keywords" content="library in Sri Ganganagar, study library near me" />
+<meta name="google-site-verification" content="nHSArnRuy2HL1fvkefJsaQsn47DlbCVQJ3OUKJV5iXM" />
+<meta name="description" content="The Book Worm Library - Premium silent study library in Sri Ganganagar. Book fixed seat online. Best reading room near you." />
+<meta name="keywords" content="best library near me, library in Sri Ganganagar, reading room Sri Ganganagar, Book Worm Library" />
 
 <style>
 *{box-sizing:border-box}
 body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#000;color:#fff}
 
-header{
-  background:#000;
-  padding:16px;
-  border-bottom:1px solid #222;
-  position:sticky;
-  top:0;
-  z-index:999
-}
-
+header{background:#000;padding:16px;border-bottom:1px solid #222;position:sticky;top:0;z-index:999}
 .topbar{display:flex;align-items:center;gap:12px}
 .menu-btn{font-size:26px;cursor:pointer;color:#ffd400}
 h1{margin:0;color:#ffd400;font-size:20px}
@@ -54,7 +47,7 @@ h1{margin:0;color:#ffd400;font-size:20px}
 
 section{padding:26px 16px;max-width:1100px;margin:auto}
 
-/* ===== HERO SLIDER ===== */
+/* HERO */
 .hero{
   position:relative;
   border-radius:16px;
@@ -71,7 +64,6 @@ section{padding:26px 16px;max-width:1100px;margin:auto}
   opacity:0;
   animation:heroSlider 18s infinite;
 }
-
 .hero-slide:nth-child(1){animation-delay:0s}
 .hero-slide:nth-child(2){animation-delay:6s}
 .hero-slide:nth-child(3){animation-delay:12s}
@@ -90,7 +82,6 @@ section{padding:26px 16px;max-width:1100px;margin:auto}
   text-align:center;
   background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.85));
 }
-
 .hero-overlay h2{color:#ffd400;margin-top:0;font-size:28px}
 
 .btn{
@@ -121,13 +112,7 @@ input,select{
   color:#fff
 }
 
-footer{
-  background:#050505;
-  padding:22px 16px;
-  text-align:center;
-  border-top:1px solid #222;
-  font-size:14px
-}
+footer{background:#050505;padding:22px 16px;text-align:center;border-top:1px solid #222;font-size:14px}
 
 .social a{
   display:inline-block;
@@ -156,7 +141,7 @@ footer{
   <a href="#packages">📦 Packages</a>
   <a href="#admission">📝 Admission Form</a>
   <a href="#photos">📸 Photos</a>
-  <a href="https://www.google.com/maps/search/?api=1&query=The+Book+Worm+Library+Sri+Ganganagar" target="_blank">📍 Location</a>
+  <a href="https://www.google.com/maps/search/?api=1&query=The+Book+Worm+Library+Ridhi+Sidhi+II+Near+Pari+Chowk+Sri+Ganganagar" target="_blank">📍 Location</a>
   <a href="tel:9785084798">📞 Call</a>
 </div>
 
@@ -180,7 +165,7 @@ footer{
   </div>
 </section>
 
-<!-- Admission Form -->
+<!-- Admission -->
 <section id="admission">
   <h2 style="color:#ffd400">Student Admission Form</h2>
   <div class="card">
@@ -189,7 +174,6 @@ footer{
       <input type="text" id="name" placeholder="Student Name" required>
       <input type="tel" id="phone" placeholder="Mobile Number" required>
 
-      <!-- NEW -->
       <input type="text" id="seat" placeholder="Seat Number" required>
 
       <select id="shift" required>
@@ -230,7 +214,7 @@ document.querySelectorAll(".sidebar a").forEach(link=>{
   });
 });
 
-// WhatsApp send (FIXED)
+// WhatsApp send FIXED
 document.getElementById('admissionForm').addEventListener('submit',function(e){
   e.preventDefault();
 
@@ -250,7 +234,7 @@ Shift: ${shift}
 City: ${city}
 Plan: ${plan}`;
 
-  const url = "https://wa.me/919785084798?text=" + encodeURIComponent(text);
+  const url="https://wa.me/919785084798?text="+encodeURIComponent(text);
   window.open(url,'_blank');
 });
 </script>
